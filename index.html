@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive NavBar</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo__menu">
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <i class="ri-global-line"></i> KisiboKevin
+                </a>
+                <div class="menu__icons">
+                    <i id="openMenu" class="ri-menu-line"></i>
+                    <i id="closeMenu" class="ri-close-line"></i>
+                </div>
+            </div>
+            <nav id="nav" class="navbar">
+                <ul class="nav-list">
+                    <li class="nav-item nav__link"><a href="#home">Home</a></li>
+                    <li class="nav-item nav__link"><a href="#company">Company</a></li>
+                    <li class="nav-item nav__link dropdown">
+                        <a href="#analytics">Analytics <span><i class="ri-arrow-down-s-line"></i></span></a>
+                        <ul class="dropdown-menu">
+                            <li>                          
+                                <a href="#overview"><i class="ri-dashboard-line"></i>Overview</a>
+                            </li>
+                            <li>                       
+                                <a href="#transactions"><i class="ri-bar-chart-line"></i>Transactions</a>
+                            </li>
+                            <li class="dropdown__submenu">
+                                <a href="#reports"><i class="ri-booklet-line"></i>Reports <i class="ri-arrow-right-s-line align__right"></i></a>
+                                <ul class="dropdown__submenu__items">
+                                    <li>
+                                        <a href="#documents"><i class="ri-sticky-note-add-line"></i>Documents</a>
+                                    </li>
+                                    <li>
+                                        <a href="#payments"><i class="ri-cash-line"></i>Payments</a>
+                                    </li>
+                                    <li>
+                                        <a href="#refunds"><i class="ri-refund-2-line"></i>Refunds</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav__link"><a href="#products">Products</a></li>
+                    <li class="nav-item nav__link dropdown">
+                        <a href="#users">Users <span><i class="ri-arrow-down-s-line"></i></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#profile"><i class="ri-account-circle-line"></i>Profile</a>
+                            </li>
+                            <li>
+                                <a href="#account"><i class="ri-bar-chart-line"></i>Account</a>
+                            </li>
+                            <li>
+                                <a href="#messages"><i class="ri-chat-1-line"></i>Messages</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav__link"><a href="#contacts">Contacts</a></li>
+                </ul>
+                <button class="menu-toggle">☰</button>
+            </nav>
+        </header>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
